@@ -1,6 +1,5 @@
-package demo.medium;
+package demo.medium.java7;
 
-import demo.medium.java7.TryWithResources;
 import org.junit.jupiter.api.Test;
 
 class TryWithResourcesTest {
