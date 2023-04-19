@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 public class TryWithResources {
     private static final Logger LOG = LoggerFactory.getLogger(TryWithResources.class);
-    private static final String OUTPUT_PATH = "src/test/output/";
+    public static final String OUTPUT_PATH = "src/test/output/";
     private static final String TRY_WITH_RESOURCES_FILENAME = "fileTryWithResources.txt";
     private static final String OLD_TRY_CATCH_FILENAME = "fileWithOldTryCatch.txt";
 
@@ -55,13 +55,13 @@ public class TryWithResources {
         }
     }
 
-    private static class CustomFileNotFoundException extends RuntimeException {
+    public static class CustomFileNotFoundException extends RuntimeException {
         public CustomFileNotFoundException(FileNotFoundException e) {
             super(e);
         }
     }
 
-    private static class CustomIOException extends RuntimeException {
+    public static class CustomIOException extends RuntimeException {
         public CustomIOException(IOException e) {
             super(e);
         }
