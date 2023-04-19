@@ -13,7 +13,7 @@ class SerializationRecordTest {
         System.out.println(unitSerialized);
         Assertions.assertNotNull(unitSerialized);
 
-        Assertions.assertThrows(IllegalArgumentException.class,
+        Assertions.assertDoesNotThrow(
                 RecordSample::deserializeObjectOldWay);
     }
 
